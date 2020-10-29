@@ -1,5 +1,8 @@
 variable "example" {}            # This is CTRL Password
 variable "pet_name_length" {}    # This is Domain Name
+variable "vcs_repository" {}     
+
+
 
 provider "aviatrix" {
   username     = "admin"
@@ -11,4 +14,9 @@ provider "aviatrix" {
 
 resource "aviatrix_segmentation_security_domain" "security_segment_domain" {
   domain_name = var.pet_name_length
+}
+
+
+locals {
+  repo_name = var.vcs_repository
 }
