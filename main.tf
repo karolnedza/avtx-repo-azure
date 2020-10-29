@@ -11,5 +11,5 @@ provider "aviatrix" {
 
 
 resource "aviatrix_segmentation_security_domain" "security_segment_domain" {
-  domain_name = var.pet_name_length
+  domain_name = var.aviatrix
 }
