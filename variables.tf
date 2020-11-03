@@ -1,4 +1,2 @@
-variable "example" {}            # This is CTRL Password
-variable "pet_name_length" {}    # This is Domain Name
-variable "vcs_repository" {}     
-variable "aviatrix" {}
+variable "ctrl_password" {}            # This is CTRL Password
+variable "security_segment_name" {}    # This is Domain Name
