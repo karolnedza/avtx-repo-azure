@@ -13,3 +13,7 @@ provider "aviatrix" {
 resource "aviatrix_segmentation_security_domain" "security_segment_domain" {
   domain_name = var.security_segment_name
 }
+
+output "segment_name" {
+value = aviatrix_segmentation_security_domain.security_segment_domain.domain_name
+}
